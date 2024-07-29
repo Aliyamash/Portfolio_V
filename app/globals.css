@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+  background-color: #f1ebd3;
+  height: 600rem;
+}
+.scroll-watch {
+  height: 8px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #414141;
+  width: 100%;
+  scale: 0 1; 
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {scale: 1 1;}
+}

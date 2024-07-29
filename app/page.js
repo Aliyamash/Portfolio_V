@@ -1,7 +1,11 @@
-
+import Hero from "@/components/hero/Hero";
+import ScrollHandler from "@/components/layout/ScrollHandler";
 
 export default function Home() {
   return (
-   <h1>home</h1>
+  <>
+  <ScrollHandler/>
+  <Hero/>
+  </>
   );
 }
