@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+  font-family: "bitter";
+  src:
+  url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
+  url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype"),
+  url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GeoSans";
+  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf) format("truetype"),
+  url(../public/fonts/geo_sans_light/GeosansLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  src:
+  url(../public/fonts/Merriweather/Merriweather-Bold.ttf)format("truetype"),;
+}
 body{
-  background-color: #f1ebd3;
-  height: 600rem;
+  font-family: "Merriweather";
+ background-color: black;
 }
 .scroll-watch {
   height: 8px;
@@ -22,3 +38,4 @@ body{
 @keyframes scroll-watcher {
   to {scale: 1 1;}
 }
+
