@@ -1,72 +1,33 @@
-"use client"
+"use client";
 
+import Down from "@/public/img/down.png";
+import Image from "next/image";
+import Link from "next/link";
 
-
-import { Parallax , ParallaxLayer } from "@react-spring/parallax"
-
-import Moon from "@/public/img/pexels-pixabay-47367.jpg"
-import down from "@/public/img/pexels-aronvisuals-1743165.jpg"
-
-import Image from "next/image"
-import ScrollHandler from "../layout/ScrollHandler"
-
-
-export default function Hero () {
-
-return(
- 
+export default function Hero() {
+  return (
     <>
-    
-     <div className="container text-center">
-      
-      <Parallax pages={4} >
-      <ScrollHandler/>
-          <ParallaxLayer
-          offset={0}
-          speed={0.5}
-          factor={2}
-         style={{
-          width: "50rem",
-          height: "50rem",
-          margin: "0 auto"
-         }}
-          >
-            <Image className="object-cover" src={Moon} alt="" /> 
-          </ParallaxLayer>
-  
-  
-  
-          <ParallaxLayer  speed={1} offset={0.5}>
-              <h1 className="mt-5 text-white text-6xl">Two Hands , (One) masterPiece</h1>
-          </ParallaxLayer>
-  
-  
-  
-  
-  
-  
-          <ParallaxLayer  offset={2} speed={0.5}>
-          <h1 className="text-white text-7xl">Love U ali</h1>
-          </ParallaxLayer>
-  
-  
-  
-          <ParallaxLayer
-          offset={3}
-          speed={1}
-          factor={2}
-          style={{
-              width: "100%",
-              height: "80%"
-          }}
-          >
-            <Image className="object-fit" src={down} alt="zabze" /> 
-          </ParallaxLayer>
-      </Parallax>
-      <div className="pic">
-          
+     <div className="container mx-auto lg:my-80">
+     <div className="flex items-center justify-center">
+        <h1
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          className="text-white text-7xl text-center border py-8 px-36 rounded-3xl relative z-0 "
+        >
+          Let's go down{" "}
+          <span>
+            <Link href="#moon">
+              <Image className="inline icon-hero" height={150} src={Down} />
+            </Link>
+          </span>{" "}
+          together{" "}
+          <span className="px-16 py-2  absolute -bottom-2 right-1/3 mr-14 z-10 bg-black"></span>
+        </h1>
       </div>
-    </div>
+     </div>
     </>
-)
+  );
 }

@@ -1,5 +1,7 @@
 import Header from "@/components/layout/Header";
 import "./globals.css";
+import AOS from "@/components/libraries/AOS";
+import AOSCL from "@/components/libraries/AOS";
 
 
 export default function RootLayout({ children }) {
@@ -7,8 +9,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body >
          <Header/>
-        {children}
-        </body>
+            {children}
+         <AOSCL/>
+         </body>
     </html>
   );
 }
