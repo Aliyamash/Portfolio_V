@@ -40,27 +40,42 @@ body{
 @keyframes scroll-watcher {
   to {scale: 1 1;}
 }
+@keyframes dancingMoon {
+ 0%{
+  transform: translateY(-10px);
+ }
+ 50%{
+  transform: translateY(35px);
+ }
+ 100%{
+  transform: translateY(-10px);
+ }
+}
+
+ /* #Moon{
+  animation: dancingMoon 5s ease infinite;
+ } */
 #particles{
   background: black;
 }
 
-.icon-hero{
-  animation: iconHero 3s ease infinite;
-}
+
 
 @keyframes iconHero {
   0%{
     transform: translateY(-10px);
   }
   50%{
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   100%{
     transform: translateY(-10px);
   }
 
 }
-
+.icon-hero{
+  animation: iconHero 3s ease infinite;
+}
 .hero-title{
   box-shadow: inset -0.1px -0.8px 5px rgba(255, 255, 255, 0.26) , inset 0px 4px 2px rgba(3, 3, 3, 0.508);
 }

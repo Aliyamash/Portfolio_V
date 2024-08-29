@@ -69,10 +69,10 @@ export default function ParticlesComponent (){
         },
         links: {
           color: "#fff",
-          distance: 120,
+          distance: 110,
           enable: true,
-          opacity: 0.5,
-          width: 0.5,
+          opacity: 0.8,
+          width: 0.4,
         },
         move: {
           direction: "none",
@@ -88,7 +88,7 @@ export default function ParticlesComponent (){
           density: {
             enable: true,
           },
-          value: 80,
+          value: 150,
         },
         opacity: {
           value: 0.5,
@@ -97,7 +97,7 @@ export default function ParticlesComponent (){
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 3 },
         },
       },
       detectRetina: true,

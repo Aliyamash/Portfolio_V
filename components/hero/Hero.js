@@ -20,7 +20,7 @@ export default function Hero() {
           Let's go down{" "}
           <span>
             <Link href="#moon">
-              <Image className="inline icon-hero" height={150} src={Down} />
+              <Image className="inline icon-hero" alt="hero-img" height={150} src={Down} />
             </Link>
           </span>{" "}
           together{" "}
