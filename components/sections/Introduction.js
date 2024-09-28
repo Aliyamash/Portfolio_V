@@ -14,7 +14,7 @@ export default function IntroductionPage() {
         end:"center center",
         scrub: true,
       },
-      background:"#0096c8"
+      background:"#0096c8",
     });
   }, []);
   return (
