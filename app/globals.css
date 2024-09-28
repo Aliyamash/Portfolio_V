@@ -23,6 +23,7 @@ body{
   scroll-behavior: smooth;
   font-family: "Merriweather";
  background-color: #000;
+ transition: 0.3s ease;
 }
 .scroll-watch {
   height: 8px;
@@ -52,9 +53,11 @@ body{
  }
 }
 
- /* #Moon{
-  animation: dancingMoon 5s ease infinite;
- } */
+.heyvanyer{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 3rem ;
+}
 #particles{
   background: black;
 }
@@ -91,5 +94,11 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
+}
+.text-two {
+  color: #ecf39e;
+}
+#textMoon{
+  width: 100rem !important;
 }
 

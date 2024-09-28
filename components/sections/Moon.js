@@ -1,7 +1,7 @@
 "use client";
 import MoonPic from "@/public/img/mooon.png";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import ParticlesComponent from "../libraries/Particle";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -11,14 +11,13 @@ export default function Moon() {
   const imgRef = useRef(null);
 
 gsap.registerPlugin(ScrollTrigger)
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.to(textRef.current, {
       yPercent: -400,
       duration:3,
       scrollTrigger: {
         trigger:".Moon",
         start:"top 30%",
-      markers:true,
         scrub: true
       },
     });
@@ -28,7 +27,7 @@ gsap.registerPlugin(ScrollTrigger)
       duration:2,
       scrollTrigger: {
         trigger:".Moon",
-        start:"top 30%",
+        start:"-50% 40%",
         scrub: true
       },
     });
@@ -51,7 +50,7 @@ gsap.registerPlugin(ScrollTrigger)
             />
 
             <div ref={textRef} id="textMoon">
-              <h1 className="text-white text-5xl drop-shadow-2xl text-center">
+              <h1 className="text-white text-8xl drop-shadow-2xl text-center">
                 Two Hands , One MasterPiece
               </h1>
           </div>

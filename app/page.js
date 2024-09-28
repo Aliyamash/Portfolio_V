@@ -5,6 +5,7 @@ import ScrollHandler from "@/components/layout/ScrollHandler";
 import CloudePage from "@/components/sections/Cloudes";
 import Info from "@/components/sections/InfoOne";
 import InfoTwo from "@/components/sections/InfoTwo";
+import IntroductionPage from "@/components/sections/Introduction";
 import Moon from "@/components/sections/Moon";
 
 
@@ -19,6 +20,7 @@ export default function Home() {
    <CloudePage/>
    <Info/>
    <InfoTwo/>
+   <IntroductionPage/>
   </>
   );
 }
