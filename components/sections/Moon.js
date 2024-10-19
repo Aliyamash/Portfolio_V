@@ -17,8 +17,10 @@ gsap.registerPlugin(ScrollTrigger)
       duration:3,
       scrollTrigger: {
         trigger:".Moon",
+        pinSpacing:true,
         start:"top 30%",
-        scrub: true
+        invalidateOnRefresh:true,
+        scrub: 2
       },
     });
 
@@ -28,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger)
       scrollTrigger: {
         trigger:".Moon",
         start:"-50% 40%",
-        scrub: true
+        scrub: 3
       },
     });
 

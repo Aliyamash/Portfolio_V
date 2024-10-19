@@ -4,26 +4,26 @@
 
 @font-face {
   font-family: "bitter";
-  src:
-  url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
-  url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype"),
-  url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype");
+  src: url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
+    url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype"),
+    url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "GeoSans";
-  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf) format("truetype"),
-  url(../public/fonts/geo_sans_light/GeosansLight.ttf) format("truetype");
+  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf)
+      format("truetype"),
+    url(../public/fonts/geo_sans_light/GeosansLight.ttf) format("truetype");
 }
 @font-face {
   font-family: "Merriweather";
-  src:
-  url(../public/fonts/Merriweather/Merriweather-Bold.ttf)format("truetype"),;
+  src: url(../public/fonts/Merriweather/Merriweather-Bold.ttf)
+    format("truetype");
 }
-body{
+body {
   scroll-behavior: smooth;
   font-family: "Merriweather";
- background-color: #000;
- transition: 0.3s ease;
+  background-color: #000;
+  transition: 0.5s ease-out;
 }
 .scroll-watch {
   height: 8px;
@@ -32,55 +32,69 @@ body{
   z-index: 1000;
   background-color: #414141;
   width: 100%;
-  scale: 0 1; 
+  scale: 0 1;
   animation: scroll-watcher linear;
   animation-timeline: scroll();
 }
 
-
 @keyframes scroll-watcher {
-  to {scale: 1 1;}
+  to {
+    scale: 1 1;
+  }
 }
 @keyframes dancingMoon {
- 0%{
-  transform: translateY(-10px);
- }
- 50%{
-  transform: translateY(35px);
- }
- 100%{
-  transform: translateY(-10px);
- }
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(35px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
-.heyvanyer{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 900;
-  font-size: 3rem ;
+@keyframes starScale {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
-#particles{
+.starone {
+  animation: starScale 2s ease infinite;
+}
+
+.heyvanyer {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#particles {
   background: black;
 }
 
-
-
 @keyframes iconHero {
-  0%{
+  0% {
     transform: translateY(-10px);
   }
-  50%{
+  50% {
     transform: translateY(50px);
   }
-  100%{
+  100% {
     transform: translateY(-10px);
   }
-
 }
-.icon-hero{
+.icon-hero {
   animation: iconHero 3s ease infinite;
 }
-.hero-title{
-  box-shadow: inset -0.1px -0.8px 5px rgba(255, 255, 255, 0.26) , inset 0px 4px 2px rgba(3, 3, 3, 0.508);
+.hero-title {
+  box-shadow: inset -0.1px -0.8px 5px rgba(255, 255, 255, 0.26),
+    inset 0px 4px 2px rgba(3, 3, 3, 0.508);
 }
 #tsparticles canvas {
   height: 90rem !important;
@@ -88,17 +102,24 @@ body{
   z-index: -30;
 }
 
-.img-moon{
+.img-moon {
   z-index: 50;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
 }
 .text-two {
   color: #ecf39e;
 }
-#textMoon{
+#textMoon {
   width: 100rem !important;
 }
-
+.container-airplanes {
+  padding-top: 24rem;
+  overflow: hidden;
+}
+.airplane {
+  transform: translateX(1400px);
+  scale: 2;
+}

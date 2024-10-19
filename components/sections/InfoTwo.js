@@ -6,14 +6,11 @@ import Image from "next/image";
 import MeTwo from "../about/MeTwo";
 import gsap from "gsap";
 import { useEffect, useLayoutEffect, useRef } from "react";
-  
-
-
-
-
+import { Tween } from "gsap/gsap-core";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function InfoTwo() {
-
+  gsap.registerPlugin(ScrollTrigger);
 
   const containerRef = useRef(null);
   const refCompany1 = useRef();
@@ -21,47 +18,23 @@ export default function InfoTwo() {
   const refCompany3 = useRef();
   const refCompany4 = useRef();
   const refCompany5 = useRef();
-  
 
   useLayoutEffect(() => {
-
- 
-  
-
     const context = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger : containerRef.current,
+          trigger: containerRef.current,
           start: "-10% center",
           end: "bottom center",
-         scrub:true
+          animate: Tween,
+          scrub: 2,
         },
       });
-      tl.to(
-        refCompany1.current,
-        { y: -450 },
-        0
-      );
-      tl.to(
-        refCompany2.current,
-        { y: -950 },
-        0
-      );
-      tl.to(
-        refCompany3.current,
-        { y: -650 },
-        0
-      );
-      tl.to(
-        refCompany4.current,
-        { y: -350 },
-        0
-      );
-      tl.to(
-        refCompany5.current,
-        { y: -850 },
-        0
-      );
+      tl.to(refCompany1.current, { y: -450 }, 0);
+      tl.to(refCompany2.current, { y: -950 }, 0);
+      tl.to(refCompany3.current, { y: -650 }, 0);
+      tl.to(refCompany4.current, { y: -350 }, 0);
+      tl.to(refCompany5.current, { y: -850 }, 0);
     });
     return () => context.revert();
   }, []);
@@ -80,7 +53,7 @@ export default function InfoTwo() {
           />
           <Image
             ref={refCompany2}
-             data-speed="3"
+            data-speed="3"
             className="company object-cover absolute bottom-20 right-0 z-50"
             height={50}
             src={ifund}
@@ -88,7 +61,7 @@ export default function InfoTwo() {
           />
           <svg
             ref={refCompany3}
-             data-speed="0.8"
+            data-speed="0.8"
             xmlns="http://www.w3.org/2000/svg"
             width="200"
             height="72.449"
@@ -108,7 +81,7 @@ export default function InfoTwo() {
           </svg>
           <p
             ref={refCompany4}
-             data-speed="2.4"
+            data-speed="2.4"
             className="company text-white heyvanyer absolute right-32 bottom-36 z-50"
             alt="heyvanyar-logo"
           >

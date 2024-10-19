@@ -5,18 +5,14 @@ import { gsap } from "gsap-trial";
 
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 import { useRef } from "react";
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 export default function Me() {
-
+  
+  gsap.registerPlugin( ScrollTrigger);
   const smoother = useRef();
 
-  useGSAP(
-    () => {
-      //badan minevisam
-    }
-  );
+ 
   return (
     <div className="container text-white mx-auto px-24 text-center -mt-28">
       <div className="flex text-5xl gap-5 justify-center leading-relaxed">

@@ -2,12 +2,13 @@
 import Image from "next/image";
 import cloud4 from "@/public/img/cloud-5.png"
 import cloud2 from "@/public/img/cloud-3.png"
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useLayoutEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; 
 
 
 export default function CloudePage() {
+    gsap.registerPlugin(ScrollTrigger); 
     const cloud1Ref = useRef()
     const cloud2Ref = useRef()
     useLayoutEffect(() => {
@@ -17,7 +18,7 @@ export default function CloudePage() {
          scrollTrigger:{
             trigger:cloud1Ref.current,
             start:"top 30%",
-            scrub:true,
+            scrub:3,
          }
         })
 
@@ -27,7 +28,7 @@ export default function CloudePage() {
             scrollTrigger:{
                trigger:cloud2Ref.current,
                start:"top 30%",
-               scrub:true,
+               scrub:2,
             }
            })
     },[])
