@@ -1,8 +1,7 @@
-
-
 import Hero from "@/components/hero/Hero";
 import ScrollHandler from "@/components/layout/ScrollHandler";
 import CloudePage from "@/components/sections/Cloudes";
+import Comment from "@/components/sections/Comments";
 import Info from "@/components/sections/InfoOne";
 import InfoTwo from "@/components/sections/InfoTwo";
 import IntroductionPage from "@/components/sections/Introduction";
@@ -25,6 +24,7 @@ export default function Home() {
    <IntroductionPage/>
    <Skills/>
    <Things/>
+   <Comment/> 
   </>
   );
 }

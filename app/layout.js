@@ -1,7 +1,6 @@
 
 import Header from "@/components/layout/Header";
 import "./globals.css";
-import AOS from "@/components/libraries/AOS";
 import AOSCL from "@/components/libraries/AOS";
 
 

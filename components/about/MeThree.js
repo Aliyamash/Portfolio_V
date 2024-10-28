@@ -32,7 +32,7 @@ export default function MeThree() {
       >
         I acquired a set of versatile technologies based on my passion for my
         career in 2022. I gained many of my skills from the various projects I
-        did.
+        did which you can see below.
       </p>
     </div>
   );

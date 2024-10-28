@@ -46,11 +46,11 @@ export default function Skills() {
       <div className="races"></div>
       <div ref={sectionRef} className="container-airplanes h-screen">
         <div ref={picRef}>
-          <Image className="airplane" src={airplanes} />
+          <Image className="airplane" src={airplanes} alt="airplan"/>
         </div>
       </div>
       <div className="h-96 mx-auto" >
-        <h1 className="text-center text-5xl text-blue-600">Things that make me more special than others</h1>
+        <h1 className="text-center text-5xl text-black drop-shadow-lg capitalize">Things that make me more special than others :)</h1>
       </div>
     </>
   );

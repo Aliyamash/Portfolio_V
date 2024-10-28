@@ -29,11 +29,11 @@ export default function Info() {
     <>
       <div>
         <Me />
-        <div className="-my-24 relative"> 
+        <div ref={cloudRef} className="-my-24 relative"> 
           <Image
             src={cloud7}
             alt="cloud-7"
-            ref={cloudRef}
+            
             className="opacity-100"
           />
         </div>

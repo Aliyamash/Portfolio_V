@@ -1,10 +1,9 @@
 import gsap from "gsap";
 import { useLayoutEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; 
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function MeTwo() {
-  gsap.registerPlugin(ScrollTrigger); 
+  gsap.registerPlugin(ScrollTrigger);
   const containerRef = useRef(null);
   const infoRef = useRef(null);
   useLayoutEffect(() => {

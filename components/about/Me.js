@@ -1,18 +1,13 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap-trial";
-
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 import { useRef } from "react";
 
-
 export default function Me() {
-  
-  gsap.registerPlugin( ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
   const smoother = useRef();
 
- 
   return (
     <div className="container text-white mx-auto px-24 text-center -mt-28">
       <div className="flex text-5xl gap-5 justify-center leading-relaxed">
