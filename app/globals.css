@@ -204,6 +204,8 @@ body {
 .item4 {
   animation-delay: calc(70s / 4 * (4 - 4) * -1);
 }
+
+
 .item5 {
   animation-delay: calc(70s / 4 * (4 - 1) * -1);
 }
@@ -217,3 +219,29 @@ body {
   animation-delay: calc(70s / 4 * (4 - 4) * -1);
 }
 
+.ptext{
+  font-family: "GeoSans";
+}
+
+
+@keyframes animateFamous {
+  0%{
+    transform: translateY(5px);
+  }
+
+  50%{
+    transform: translateY(-5px);
+  }
+
+  100%{
+    transform: translateY(5px);
+  }
+}
+
+.famousPic1{
+  animation: animateFamous 3s ease-in-out infinite;
+}
+.famousPic2{
+  animation: animateFamous 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
