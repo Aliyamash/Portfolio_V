@@ -230,7 +230,7 @@ body {
   }
 
   50%{
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
 
   100%{
@@ -239,9 +239,9 @@ body {
 }
 
 .famousPic1{
-  animation: animateFamous 3s ease-in-out infinite;
+  animation: animateFamous 2s ease-in-out infinite;
 }
 .famousPic2{
-  animation: animateFamous 3s ease-in-out infinite;
-  animation-delay: 2s;
+  animation: animateFamous 2s ease-in-out infinite;
+  animation-delay: 1s;
 }
