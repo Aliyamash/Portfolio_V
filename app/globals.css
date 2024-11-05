@@ -4,20 +4,18 @@
 
 @font-face {
   font-family: "bitter";
-  src: url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
-    url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype"),
-    url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype");
+  src:url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype"),
+  url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
+    url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype")
 }
 @font-face {
   font-family: "GeoSans";
-  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf)
-      format("truetype"),
+  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf)format("truetype"),
     url(../public/fonts/geo_sans_light/GeosansLight.ttf) format("truetype");
 }
 @font-face {
   font-family: "Merrweather";
-  src: url(../public/fonts/Merriweather/Merriweather-Regular.ttf)
-      format("truetype"),
+  src: url(../public/fonts/Merriweather/Merriweather-Regular.ttf)format("truetype"),
     url(../public/fonts/Merriweather/Merriweather-Bold.ttf) format("truetype"),
     url(../public/fonts/Merriweather/Merriweather-Light.ttf) format("truetype");
 }
@@ -244,4 +242,15 @@ body {
 .famousPic2{
   animation: animateFamous 2s ease-in-out infinite;
   animation-delay: 1s;
+}
+.bg-project{
+  background: rgb(253,234,132);
+  background: linear-gradient(0deg, rgba(253,234,132,1) 26%, rgba(171,219,245,1) 100%); 
+	filter: drop-shadow(0 20px 13px rgba(236, 226, 81, 0.075)) drop-shadow(0 8px 5px rgba(224, 222, 56, 0.08))
+}
+.text-project{
+  font-family: "bitter";
+  color: #343a40;
+  opacity: 0;
+  transform: translateY(50px);
 }

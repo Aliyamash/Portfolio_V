@@ -64,11 +64,13 @@ export default function Comment() {
         </div>
         {/* parent comments */}
         <div className="flex gap-8 justify-center mt-24">
-          <div className="ptext capitalize w-1/3 text-center text-4xl px-24">
-            <p>The programmer organizes the world and God loves order</p>
+          <div className="ptext capitalize w-1/3  text-4xl px-24">
+            <p className="text-center text-pretty" >The programmer organizes the world and God loves order</p>
+            <p className="mt-8 text-2xl">M.nafar</p>
           </div>
-          <div className="ptext capitalize w-1/3 text-center text-4xl p-8">
-            <p>Enjoying seeing your art shows that you are awesome.</p>
+          <div className="ptext capitalize w-1/3 text-4xl p-8 ">
+            <p className="text-center text-pretty">Enjoying seeing your art shows that you are awesome.</p>
+            <p className="mt-8 text-2xl">V.ashrafi</p>
           </div>
           
         </div>

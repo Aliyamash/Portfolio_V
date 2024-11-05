@@ -20,7 +20,7 @@ export default function FamousPeople() {
         <div >
           <Image
             src={jadi}
-            className="famousPic2 rounded-2xl shadow-2xl shadow-gray-700"
+            className="famousPic2 rounded-2xl shadow-2xl shadow-gray-700 "
             height={120}
             alt="jadi"
           />

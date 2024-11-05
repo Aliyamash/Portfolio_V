@@ -11,13 +11,13 @@ export default function Me() {
   return (
     <div className="container text-white mx-auto px-24 text-center -mt-28">
       <div className="flex text-5xl gap-5 justify-center leading-relaxed">
-        <p>Hello, I am </p>
+        <p>Hello World, I am </p>
         <p>Ali</p>
       </div>
-      <p className="box-c text-4xl leading-relaxed mx-auto text-pretty">
+      <p className="box-c text-4xl leading-relaxed mx-auto text-pretty capitalize">
         I have been working in the front-end field for more than 3 years, and I
         am also very interested in designing attractive and special designs. I
-        have a good team consisting of front-end, back-end and UI / UX, each of
+        have a good team consisting of front-end, back-end and UI designer, each of
         my colleagues are experts in their field.
       </p>
     </div>
