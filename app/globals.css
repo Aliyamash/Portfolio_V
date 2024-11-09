@@ -172,7 +172,7 @@ body {
   animation-duration: 70s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  mask-image: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }
 .items2 {
   height: auto;
@@ -186,7 +186,7 @@ body {
   animation-duration: 70s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-	filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+	mask-image: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   z-index: 50;
 }
 
@@ -244,13 +244,21 @@ body {
   animation-delay: 1s;
 }
 .bg-project{
-  background: rgb(253,234,132);
-  background: linear-gradient(0deg, rgba(253,234,132,1) 26%, rgba(171,219,245,1) 100%); 
-	filter: drop-shadow(0 20px 13px rgba(236, 226, 81, 0.075)) drop-shadow(0 8px 5px rgba(224, 222, 56, 0.08))
+  background: rgb(171,219,245);
+background: linear-gradient(180deg, rgba(171,219,245,1) 0%, rgba(254,224,65,1) 100%); 
+}
+.bg-sky{
+  mask-image: drop-shadow(0 20px 130px rgba(243, 231, 57, 0.76)) drop-shadow(0 8px 25px rgba(245, 232, 51, 0.08));
+}
+.skyPic{
+  background-image: url('/img/khalifetower.jpg');
+  width: 100%;
+  height: 300vh;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 .text-project{
   font-family: "bitter";
+  font-weight: bold;
   color: #343a40;
-  opacity: 0;
-  transform: translateY(50px);
 }
