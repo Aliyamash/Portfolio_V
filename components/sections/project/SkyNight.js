@@ -12,6 +12,7 @@ export default function SkyNight() {
   const clip5 = useRef(null);
   const clip6 = useRef(null);
   const clip7 = useRef(null);
+  const clip8 = useRef(null);
 
   const enterMouseHandler1 = () => {
     if (clip1.current) {
@@ -86,51 +87,72 @@ export default function SkyNight() {
   };
 
   const enterMouseHandler7 = () => {
-    if (clip6.current) {
-      clip6.current.play();
+    if (clip7.current) {
+      clip7.current.play();
     }
   };
   const leaveMouseHandler7 = () => {
-    if (clip6.current) {
-      clip6.current.pause();
-      clip6.current.currentTime = 0;
+    if (clip7.current) {
+      clip7.current.pause();
+      clip7.current.currentTime = 0;
+    }
+  };
+  const enterMouseHandler8 = () => {
+    if (clip8.current) {
+      clip8.current.play();
+    }
+  };
+  const leaveMouseHandler8 = () => {
+    if (clip8.current) {
+      clip8.current.pause();
+      clip8.current.currentTime = 0;
     }
   };
 
   return (
     <>
       <div className="skyPic w-fit">
-        <div className="flex justify-between px-8 mb-36">
-          <video
-            onMouseEnter={enterMouseHandler1}
-            onMouseLeave={leaveMouseHandler1}
-            ref={clip1}
-            src="/videos/game1.mp4"
-            className="rounded-2xl object-cover"
-            width={550}
-            height={100}
-            muted
-          />
+        <div className="flex justify-between px-8 mb-64">
+          <div className="card-container">
+            <article className="card-article">
+              <video
+                onMouseEnter={enterMouseHandler1}
+                onMouseLeave={leaveMouseHandler1}
+                ref={clip1}
+                src="/videos/game1.mp4"
+                className="clip rounded-2xl object-cover"
+                width={700}
+                height={550}
+                muted
+              />
+              <div className="card-data">
+                  <span className="card-description"></span>
+                  <h2 className="card-title"></h2>
+                  <a href="#" className="card-button"></a>
+              </div>
+            </article>
+          </div>
+
           <video
             onMouseEnter={enterMouseHandler2}
             onMouseLeave={leaveMouseHandler2}
             ref={clip2}
             src="/videos/apiList.mp4"
-            className="rounded-2xl"
-            width={550}
+            className="clip rounded-2xl object-cover"
+            width={700}
             height={350}
             muted
           />
         </div>
 
-        <div className="flex justify-between px-8 mb-36">
+        <div className="flex justify-between px-8 mb-64">
           <video
             onMouseEnter={enterMouseHandler3}
             onMouseLeave={leaveMouseHandler3}
             ref={clip3}
             src="/videos/game2.mp4"
-            className="rounded-2xl"
-            width={550}
+            className="clip rounded-2xl object-cover"
+            width={700}
             height={350}
             poster="/img/game2.png"
             muted
@@ -140,21 +162,21 @@ export default function SkyNight() {
             onMouseLeave={leaveMouseHandler4}
             ref={clip4}
             src="/videos/keyhan.mp4"
-            className="rounded-2xl"
-            width={550}
+            className="clip rounded-2xl object-cover"
+            width={700}
             height={350}
             muted
           />
         </div>
 
-        <div className="flex justify-between px-8 mb-36">
+        <div className="flex justify-between px-8 mb-64">
           <video
             onMouseEnter={enterMouseHandler5}
             onMouseLeave={leaveMouseHandler5}
             ref={clip5}
             src="/videos/portfolioSH.mp4"
-            className="rounded-2xl object-cover"
-            width={550}
+            className="clip rounded-2xl object-cover "
+            width={700}
             height={350}
             muted
           />
@@ -163,22 +185,39 @@ export default function SkyNight() {
             onMouseLeave={leaveMouseHandler6}
             ref={clip6}
             src="/videos/fastFood.mp4"
-            className="rounded-2xl"
-            width={550}
+            className="clip rounded-2xl object-cover"
+            width={700}
             height={350}
             poster="/img/fastfood.png"
             muted
           />
         </div>
 
-        <div className="flex justify-between px-8 mb-36">
-          <video
+        <div className="flex justify-between px-8 mb-64">
+          <div
             onMouseEnter={enterMouseHandler7}
             onMouseLeave={leaveMouseHandler7}
-            ref={clip7}
-            src="/videos/travel.mp4"
-            className="rounded-2xl"
-            width={550}
+            className="relative container-clip"
+          >
+            <video
+              ref={clip7}
+              src="/videos/travel.mp4"
+              className=" clip rounded-2xl object-cover"
+              width={700}
+              height={350}
+              muted
+            />
+
+            <div className="bg-clip clip rounded-2xl"></div>
+          </div>
+
+          <video
+            onMouseEnter={enterMouseHandler8}
+            onMouseLeave={leaveMouseHandler8}
+            ref={clip8}
+            src="/videos/basketshop.mp4"
+            className=" clip rounded-2xl object-cover"
+            width={700}
             height={350}
             muted
           />

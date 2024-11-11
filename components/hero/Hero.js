@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="container mx-auto lg:my-80">
+      <div className="container mx-auto lg:my-80" id="hero-section">
         <div className="flex items-center justify-center">
           <h1
             data-aos="fade-zoom-in"
