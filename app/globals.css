@@ -4,18 +4,20 @@
 
 @font-face {
   font-family: "bitter";
-  src:url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype"),
-  url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
-    url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype")
+  src: url(../public/fonts/Bitter/static/Bitter-Light.ttf) format("truetype"),
+    url(../public/fonts/Bitter/static/Bitter-Bold.ttf) format("truetype"),
+    url(../public/fonts/Bitter/static/Bitter-ExtraBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "GeoSans";
-  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf)format("truetype"),
+  src: url(../public/fonts/geo_sans_light/GeosansLight-Oblique.ttf)
+      format("truetype"),
     url(../public/fonts/geo_sans_light/GeosansLight.ttf) format("truetype");
 }
 @font-face {
   font-family: "Merrweather";
-  src: url(../public/fonts/Merriweather/Merriweather-Regular.ttf)format("truetype"),
+  src: url(../public/fonts/Merriweather/Merriweather-Regular.ttf)
+      format("truetype"),
     url(../public/fonts/Merriweather/Merriweather-Bold.ttf) format("truetype"),
     url(../public/fonts/Merriweather/Merriweather-Light.ttf) format("truetype");
 }
@@ -131,11 +133,13 @@ body {
   height: 150px;
   margin-top: 2rem;
   overflow: hidden;
-  mask-image: linear-gradient(to right ,
-  rgba(0,0,0,0),
-  rgba(0,0,0,1) 20%,
-  rgba(0,0,0,1) 80%,
-  rgba(0,0,0,0));
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
 .warrper2 {
   width: 95%;
@@ -144,11 +148,13 @@ body {
   position: relative;
   height: 200px;
   overflow: hidden;
-  mask-image: linear-gradient(to right ,
-  rgba(0,0,0,0),
-  rgba(0,0,0,1) 20%,
-  rgba(0,0,0,1) 80%,
-  rgba(0,0,0,0));
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
 @keyframes scrollHarizontal1 {
   to {
@@ -172,7 +178,8 @@ body {
   animation-duration: 70s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  mask-image: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  mask-image: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }
 .items2 {
   height: auto;
@@ -186,7 +193,8 @@ body {
   animation-duration: 70s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-	mask-image: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  mask-image: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   z-index: 50;
 }
 
@@ -203,7 +211,6 @@ body {
   animation-delay: calc(70s / 4 * (4 - 4) * -1);
 }
 
-
 .item5 {
   animation-delay: calc(70s / 4 * (4 - 1) * -1);
 }
@@ -217,59 +224,172 @@ body {
   animation-delay: calc(70s / 4 * (4 - 4) * -1);
 }
 
-.ptext{
+.ptext {
   font-family: "GeoSans";
 }
 
-
 @keyframes animateFamous {
-  0%{
+  0% {
     transform: translateY(5px);
   }
 
-  50%{
+  50% {
     transform: translateY(-2px);
   }
 
-  100%{
+  100% {
     transform: translateY(5px);
   }
 }
 
-.famousPic1{
+.famousPic1 {
   animation: animateFamous 2s ease-in-out infinite;
 }
-.famousPic2{
+.famousPic2 {
   animation: animateFamous 2s ease-in-out infinite;
   animation-delay: 1s;
 }
-.bg-project{
-  background: rgb(171,219,245);
-background: linear-gradient(180deg, rgba(171,219,245,1) 0%, rgba(254,224,65,1) 100%); 
+.bg-project {
+  background: rgb(171, 219, 245);
+  background: linear-gradient(
+    180deg,
+    rgba(171, 219, 245, 1) 0%,
+    rgba(254, 224, 65, 1) 100%
+  );
 }
-.bg-sky{
-  mask-image: drop-shadow(0 20px 130px rgba(243, 231, 57, 0.76)) drop-shadow(0 8px 25px rgba(245, 232, 51, 0.08));
+.bg-sky {
+  mask-image: drop-shadow(0 20px 130px rgba(243, 231, 57, 0.76))
+    drop-shadow(0 8px 25px rgba(245, 232, 51, 0.08));
 }
-.skyPic{
-  background-image: url('/img/khalifetower.jpg');
+.skyPic {
+  background-image: url("/img/khalifetower.jpg");
   width: 100%;
   height: 320vh;
-    background-size: cover;
-    background-repeat: no-repeat; 
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.text-project{
+.text-project {
   font-family: "bitter";
   font-weight: bold;
   color: #343a40;
 }
 
-.clip{
-  transition: 1s;
+.clip {
+  width: 700px;
 }
-.clip:hover{
-transform: translateY(-1rem);
-transition: 1s;
-opacity: 0.9;
-box-shadow: 0 8px 24px hsla(0 , 0% , 0% , .15);
+.card-article {
+  position: relative;
+  overflow: hidden;
+}
+.card-data {
+  width: 400px;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -10rem;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
 
+  transition: opcity 1s 1s;
+}
+
+
+.card-data-two{
+  background-color: #212428;
+
+  box-shadow: 0 8px 24px hsla(0, 0%, 85%, 0.068);
+}
+.card-data-two .card-title {
+  color: white;
+}
+
+.card-data-two .card-button {
+  color: #14bd20;
+}
+.card-data-two .card-description{
+  color: #b8b8b8;
+}
+
+.card-description {
+  display: block;
+  font-size: small;
+  color: #343a40;
+  margin-bottom: 0.3rem;
+}
+.card-title {
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0.75rem;
+}
+.card-button {
+  text-decoration: none;
+  font-size: smaller;
+  font-weight: 500;
+  color: #094d0d;
+}
+.card-button:hover {
+  text-decoration: underline;
+}
+
+.card-article:hover .card-data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.card-article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card-article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card-article:not(:hover) .card-data{
+  animation: remove-data 1s forwards;
+}
+.container-btn:hover .icon-btn {
+transform: translateX(10px);
+transition: 0.5s ;
+}
+.icon-btn{
+  transition: 0.3s;
+}
+
+
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-11rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-11rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
 }
