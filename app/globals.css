@@ -279,6 +279,8 @@ body {
 }
 .card-article {
   position: relative;
+  box-shadow: 0px 10px 16px 14px rgba(0,0,0,0.2);
+  border-radius: 1rem;
   overflow: hidden;
 }
 .card-data {
@@ -299,7 +301,6 @@ body {
 
 .card-data-two{
   background-color: #212428;
-
   box-shadow: 0 8px 24px hsla(0, 0%, 85%, 0.068);
 }
 .card-data-two .card-title {
@@ -357,8 +358,20 @@ transition: 0.5s ;
 .icon-btn{
   transition: 0.3s;
 }
-
-
+.gol{
+  background-color: #fff;
+  height: 100svh !important;
+}
+.bg-game{
+background: rgba(204, 204, 204, 0.58);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.8px);
+-webkit-backdrop-filter: blur(13.8px);
+border: 1px solid rgba(204, 204, 204, 0.05);
+height: 20rem;
+width: 100%;
+}
 
 @keyframes show-data {
   50% {

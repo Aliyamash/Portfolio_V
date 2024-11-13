@@ -113,7 +113,8 @@ export default function SkyNight() {
   return (
     <>
       <div className="skyPic w-fit">
-        <div className="flex justify-between px-8 mb-64">
+   <div className="flex justify-between px-8 mb-64">
+
           <div className="card-container">
             <article className="card-article">
               <video
@@ -130,7 +131,7 @@ export default function SkyNight() {
                 <span className="card-description">Html / Css / js</span>
                 <h2 className="card-title text-2xl">Game Project</h2>
                 <div className="container-btn flex gap-2 items-center">
-                  <a href="#" className="card-button">
+                  <a href="/gameOne" className="card-button">
                     Read more
                   </a>
                   <Image className="icon-btn" src={rightIcon} width={20} />
@@ -165,7 +166,7 @@ export default function SkyNight() {
           </div>
         </div>
 
-        <div className="flex justify-between px-8 mb-64">
+  <div className="flex justify-between px-8 mb-64">
           <div className="card-container">
             <article className="card-article">
               <video
@@ -217,7 +218,7 @@ export default function SkyNight() {
           </div>
         </div>
 
-        <div className="flex justify-between px-8 mb-64">
+   <div className="flex justify-between px-8 mb-64">
           <div className="card-container">
             <article className="card-article">
               <video
@@ -269,7 +270,7 @@ export default function SkyNight() {
           </div>
         </div>
 
-        <div className="flex justify-between px-8 mb-64">
+   <div className="flex justify-between px-8 mb-64">
           
         <div className="card-container">
               <article className="card-article">

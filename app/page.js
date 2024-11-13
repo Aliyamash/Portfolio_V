@@ -1,5 +1,6 @@
 import Hero from "@/components/hero/Hero";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import ScrollHandler from "@/components/layout/ScrollHandler";
 import CloudePage from "@/components/sections/Cloudes";
 import Comment from "@/components/sections/Comments";
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
   <>
+  <Header/>
    <ScrollHandler/>
    <Hero/>
    <Moon/>
