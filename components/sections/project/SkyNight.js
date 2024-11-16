@@ -115,7 +115,7 @@ export default function SkyNight() {
       <div className="skyPic w-fit">
    <div className="flex justify-between px-8 mb-64">
 
-          <div className="card-container">
+          <div className="card-container" id="works">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler1}
@@ -140,7 +140,7 @@ export default function SkyNight() {
             </article>
           </div>
 
-          <div className="card-container">
+          <div className="card-container" >
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler2}

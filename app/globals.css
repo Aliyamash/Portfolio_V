@@ -275,11 +275,12 @@ body {
 }
 
 .clip {
-  width: 700px;
+  width: 700px !important;
+  height: 350px !important;
 }
 .card-article {
   position: relative;
-  box-shadow: 0px 10px 16px 14px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 16px 14px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -298,8 +299,7 @@ body {
   transition: opcity 1s 1s;
 }
 
-
-.card-data-two{
+.card-data-two {
   background-color: #212428;
   box-shadow: 0 8px 24px hsla(0, 0%, 85%, 0.068);
 }
@@ -310,7 +310,7 @@ body {
 .card-data-two .card-button {
   color: #14bd20;
 }
-.card-data-two .card-description{
+.card-data-two .card-description {
   color: #b8b8b8;
 }
 
@@ -348,30 +348,60 @@ body {
   animation: show-overflow 2s forwards;
 }
 
-.card-article:not(:hover) .card-data{
+.card-article:not(:hover) .card-data {
   animation: remove-data 1s forwards;
 }
 .container-btn:hover .icon-btn {
-transform: translateX(10px);
-transition: 0.5s ;
+  transform: translateX(10px);
+  transition: 0.5s;
 }
-.icon-btn{
+.icon-btn {
   transition: 0.3s;
 }
-.gol{
+.gol {
   background-color: #fff;
-  height: 100svh !important;
+  height: 300vh !important;
 }
-.bg-game{
-background: rgba(204, 204, 204, 0.58);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(13.8px);
--webkit-backdrop-filter: blur(13.8px);
-border: 1px solid rgba(204, 204, 204, 0.05);
-height: 20rem;
-width: 100%;
+.works-title{
+  font-family: "GeoSans" !important;
 }
+.bg-game {
+  background: rgba(204, 204, 204, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.8px);
+  -webkit-backdrop-filter: blur(13.8px);
+  border: 1px solid rgba(204, 204, 204, 0.05);
+}
+
+.icon-project{
+  transition: 0.3s;
+}
+.icon-project:hover{
+  transform: scale(1.08);
+  transition: 0.3s;
+}
+
+.clip-btn{
+  transition: 0.3s;
+}
+.clip-btn:hover{
+  background-color: #366a9e;
+  transform: scale(1.09);
+  transition: 0.3s;
+}
+.clip-btn:hover .link-btn{
+  transition: 0.3s;
+  opacity: 1;
+}
+.link-btn{
+  transition: 0.3s;
+  opacity: 0;
+}
+.icon-description{
+  font-size: small;
+}
+
 
 @keyframes show-data {
   50% {
