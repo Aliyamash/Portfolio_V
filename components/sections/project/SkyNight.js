@@ -140,7 +140,7 @@ export default function SkyNight() {
             </article>
           </div>
 
-          <div className="card-container" >
+          <div className="card-container" id="work">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler2}
@@ -153,10 +153,10 @@ export default function SkyNight() {
                 muted
               />
               <div className="card-data card-data-two">
-                <span className="card-description">Css / React</span>
+                <span className="card-description">Css / Alpine.js / javaScript</span>
                 <h2 className="card-title text-2xl">Api List</h2>
                 <div className="container-btn flex gap-2 items-center">
-                  <a href="#" className="card-button">
+                  <a href="/apiList" className="card-button">
                     Read more
                   </a>
                   <Image className="icon-btn" src={rightIcon} width={20} />
@@ -184,7 +184,7 @@ export default function SkyNight() {
                 <span className="card-description">Taillwind Css / Alpine / js</span>
                 <h2 className="card-title text-2xl">Game project two</h2>
                 <div className="container-btn flex gap-2 items-center">
-                  <a href="#" className="card-button">
+                  <a href="/gameTwo" className="card-button">
                     Read more
                   </a>
                   <Image className="icon-btn" src={rightIcon} width={20} />
@@ -208,7 +208,7 @@ export default function SkyNight() {
                 <span className="card-description">Html / Css / Flex / js</span>
                 <h2 className="card-title text-2xl">Galaxy Project</h2>
                 <div className="container-btn flex gap-2 items-center">
-                  <a href="#" className="card-button">
+                  <a href="/keyhanWeb" className="card-button">
                     Read more
                   </a>
                   <Image className="icon-btn" src={rightIcon} width={20} />
@@ -235,7 +235,7 @@ export default function SkyNight() {
                 <span className="card-description">React / Next.js / Taillwind / AOS / Jango</span>
                 <h2 className="card-title text-2xl">Portfolio and Shoppoing project</h2>
                 <div className="container-btn flex gap-2 items-center">
-                  <a href="#" className="card-button">
+                  <a href="/shahriarH" className="card-button">
                     Read more
                   </a>
                   <Image className="icon-btn" src={rightIcon} width={20} />
@@ -243,6 +243,7 @@ export default function SkyNight() {
               </div>
             </article>
           </div>
+
           <div className="card-container">
             <article className="card-article">
               <video
@@ -260,7 +261,7 @@ export default function SkyNight() {
                 <span className="card-description">React / Next.js / AOS</span>
                 <h2 className="card-title text-2xl">Fast Food Project</h2>
                 <div className="container-btn flex gap-2 items-center">
-                  <a href="#" className="card-button">
+                  <a href="/fastFood" className="card-button">
                     Read more
                   </a>
                   <Image className="icon-btn" src={rightIcon} width={20} />
@@ -288,7 +289,7 @@ export default function SkyNight() {
                   <span className="card-description">React / Redux</span>
                   <h2 className="card-title text-2xl">Shopping cart Project</h2>
                   <div className="container-btn flex gap-2 items-center">
-                    <a href="#" className="card-button">
+                    <a href="/basketShop" className="card-button">
                       Read more
                     </a>
                     <Image className="icon-btn" src={rightIcon} width={20} />
@@ -313,7 +314,7 @@ export default function SkyNight() {
                   <span className="card-description">Html / Css / Grid</span>
                   <h2 className="card-title text-2xl">Travel Project</h2>
                   <div className="container-btn flex gap-2 items-center">
-                    <a href="#" className="card-button">
+                    <a href="/travel" className="card-button">
                       Read more
                     </a>
                     <Image className="icon-btn" src={rightIcon} width={20} />

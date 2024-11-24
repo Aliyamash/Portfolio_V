@@ -362,7 +362,7 @@ body {
   background-color: #fff;
   height: 300vh !important;
 }
-.works-title{
+.works-title {
   font-family: "GeoSans" !important;
 }
 .bg-game {
@@ -374,34 +374,33 @@ body {
   border: 1px solid rgba(204, 204, 204, 0.05);
 }
 
-.icon-project{
+.icon-project {
   transition: 0.3s;
 }
-.icon-project:hover{
+.icon-project:hover {
   transform: scale(1.08);
   transition: 0.3s;
 }
 
-.clip-btn{
+.clip-btn {
   transition: 0.3s;
 }
-.clip-btn:hover{
+.clip-btn:hover {
   background-color: #366a9e;
   transform: scale(1.09);
   transition: 0.3s;
 }
-.clip-btn:hover .link-btn{
+.clip-btn:hover .link-btn {
   transition: 0.3s;
   opacity: 1;
 }
-.link-btn{
+.link-btn {
   transition: 0.3s;
   opacity: 0;
 }
-.icon-description{
+.icon-description {
   font-size: small;
 }
-
 
 @keyframes show-data {
   50% {
@@ -434,5 +433,98 @@ body {
   }
   50% {
     overflow: hidden;
+  }
+}
+
+.gifFooter {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.footer {
+  height: 100%;
+}
+.footer-title {
+  top: 0;
+  position: absolute;
+}
+.container-footer {
+  position: relative;
+  mask-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 85%,
+    rgb(0, 0, 0, 0)
+  );
+}
+.footer-clip {
+  opacity: 0.3;
+  mask-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 40%,
+    rgb(0, 0, 0, 0)
+  );
+  width: 90%;
+}
+.footer-details {
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  transition: 0.5s;
+  top: 50%;
+}
+.btn-footer {
+  transition: 0.5s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 243, 0, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14.9px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.footer-details:hover{
+  transition: 0.5s;
+  transform: scale(0.96) translateY(4px);
+}
+.footer-details:hover .btn-footer{
+color: #fff;
+transition: 0.5s;
+background: rgba(0, 0, 0, 0.84);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+rgba(250, 246, 0, 0.425) 0px -12px 200px, rgba(221, 217, 1, 0.12) 0px 4px 160px,
+rgba(236, 221, 1, 0.637) 0px 12px 150px, rgba(236, 240, 1, 0.09) 0px -3px 200px;
+}
+.icon-footer {
+  transition: 0.5s;
+  margin-inline: 0.75rem;
+}
+.icon-footer:hover {
+  transition: 0.5s;
+  animation: borderAnimate 5s infinite;
+  transform: scale(0.9);
+}
+@keyframes borderAnimate {
+  0% {
+    border-radius: 20% 50% 40% 70% / 52% 67% 40% 12%;
+  }
+  25% {
+    border-radius: 50% 90% 10% 20% / 72% 37% 70% 92%;
+  }
+  50% {
+    border-radius: 53% 70% 90% 20% / 90% 30% 50% 60%;
+  }
+  75% {
+    border-radius: 33% 85% 34% 65% / 20% 19% 93% 40%;
+  }
+  100% {
+    border-radius: 20% 50% 40% 70% / 52% 67% 40% 12%;
   }
 }

@@ -1,0 +1,5 @@
+{
+    "powermode.enabled": true,
+    "powermode.combo.timerEnabled": "hide",
+    "powermode.combo.counterEnabled": "hide"
+}

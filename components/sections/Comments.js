@@ -25,7 +25,7 @@ export default function Comment() {
           </h1>
         </div>
         {/* Comments */}
-        <div className="warrper1">
+        <div className="warrper1" id="comments">
 
           <div className="items1 item1">
             <Image  src={comment1} className="object-fit rounded-lg" alt="comments"/>

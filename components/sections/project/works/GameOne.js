@@ -31,7 +31,7 @@ export default function GameOne() {
           </div>
           <div className="bg-game p-16">
             {/* project video */}
-            <div className="mt-32 shadow rounded-2xl  shadow-2xl">
+            <div className="mt-16 shadow rounded-2xl  shadow-2xl">
 
               <video
                 ref={clip1}
@@ -47,7 +47,7 @@ export default function GameOne() {
             {/* btn link */}
               <div className="clip-btn shadow shadow-2xl flex items-center gap-2 justify-center text-center my-12 bg-zinc-800 w-3/4 p-4 mx-auto rounded-2xl">
               <a className="text-white text-2xl" href="https://gaming-tau-ebon.vercel.app/" target="_blank">Let's go to the site</a>
-              <Image className="link-btn" src={open} width={15}/>
+              <Image className="link-btn" src={open} width={15} alt="link-icon"/>
               </div>
 
             <hr className=" border-gray-500" />
@@ -82,7 +82,7 @@ export default function GameOne() {
 
                 <div className="flex flex-col items-center">
                 <a href="https://gaming-tau-ebon.vercel.app/" target="_blank" className="icon-project shadow-white shadow-2xl bg-zinc-800 w-fit p-3 mt-4 mb-1 rounded-lg">
-                  <Image src={site} width={30} height={30}/>
+                  <Image src={site} width={30} height={30} alt="site-icon"/>
                 </a>
                 <div className="icon-description">Site</div>
                 </div>
@@ -94,22 +94,22 @@ export default function GameOne() {
                     viewBox="0,0,256,256"
                     width="30px"
                     height="30px"
-                    fill-rule="nonzero"
+                    fillRule="nonzero"
                   >
                     <g
                       fill="#ffffff"
-                      fill-rule="nonzero"
+                      fillRule="nonzero"
                       stroke="none"
-                      stroke-width="1"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="10"
-                      stroke-dasharray=""
-                      stroke-dashoffset="0"
-                      font-family="none"
-                      font-weight="none"
-                      font-size="none"
-                      text-anchor="none"
+                      strokeWidth="1"
+                      strokeLinecap="butt"
+                      strokeLinejoin="miter"
+                      strokeMiterlimit="10"
+                      strokeDasharray=""
+                      strokeDashoffset="0"
+                      fontFamily="none"
+                      fontWeight="none"
+                      fontSize="none"
+                      textAnchor="none"
                       style={{mixBlendMode: "normal"}}
                     >
                       <g transform="scale(5.12,5.12)">
@@ -121,26 +121,7 @@ export default function GameOne() {
                 <div className="icon-description">GitHub</div>
                 </div>
 
-                <div className="flex flex-col items-center">
-                <a href="https://vercel.com/portfolios-projects-fc8fc6b0/gaming" target="_blank" className="icon-project shadow-2xl bg-zinc-800 w-fit p-3 mt-4 mb-1 rounded-lg">
-                  <svg
-                    data-testid="geist-icon"
-                    height="30"
-                    stroke-linejoin="round"
-                    viewBox="0 0 16 16"
-                    width="30"
-                    style={{ color: "white" }}
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M8 1L16 15H0L8 1Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </a>
-                <div className="icon-description">Vercel</div>
-                </div>
+               
               </div>
           </div>
         </div>

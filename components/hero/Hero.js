@@ -15,7 +15,7 @@ export default function Hero() {
             data-aos-delay="300"
             data-aos-offset="0"
             data-aos-duration="500"
-            className="text-white text-7xl text-center border py-8 px-36 rounded-3xl relative z-0 "
+            className="text-white  text-center border py-8 px-36 rounded-3xl relative z-0 "
           >
             Let's go down{" "}
             <span>
@@ -23,7 +23,7 @@ export default function Hero() {
                 <Image
                   className="inline icon-hero"
                   alt="hero-img"
-                  height={150}
+                  height={15}
                   src={Down}
                 />
               </Link>
