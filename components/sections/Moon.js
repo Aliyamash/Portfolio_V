@@ -39,7 +39,7 @@ gsap.registerPlugin(ScrollTrigger)
     <>
       <div className="my-80" id="moon">
         <div className="relative pt-40 ">
-         
+         <ParticlesComponent/>
           <div className="img-moon Moon">
            <div ref={imgRef}>
            <Image
