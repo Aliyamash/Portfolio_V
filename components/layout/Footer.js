@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+import { Link } from "react-scroll";
 import email from "@/public/img/email.png";
 import linkedin from "@/public/img/linkedin.png";
 import Image from "next/image";
@@ -20,21 +21,29 @@ export default function Footer() {
           <div className="footer-details text-center">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScvReTjFnarTmh_A9hFku5IuR1j7CjEbJv3UbOqApWW51N2Cg/viewform?usp=sf_link"
-              className="btn-footer px-12 py-8 text-center text-5xl text-white mt-24 drop-shadow-xl"
+              className="btn-footer p-2 lg:px-12 lg:py-8 text-center text-xl lg:text-5xl text-white mt-24 drop-shadow-xl"
             >
               Co-Operations
             </a>
           </div>
         </div>
-        <div className="flex justify-between items-center mt-32 px-24 pt-36 text-white ">
-          {/* link */}
-          <div className="flex flex-col gap-8">
-            <Link href="#">back to up</Link>
-            <Link href="#comments">Comments</Link>
-            <Link href="#work">Work</Link>
+        <div className="flex flex-col lg:flex-row justify-between items-center mt-32 p-8 lg:px-24 pt-36 text-white ">
+
+         <div className="flex  items-center justify-between ">
+           {/* link */}
+           <div className="flex flex-col text-sm lg:text-lg  gap-4  lg:gap-8">
+            <Link to="header-section" smooth={true} duration={2500}>
+              back to up
+            </Link>
+            <Link to="comments" smooth={true} duration={1500}>
+              Comments
+            </Link>
+            <Link to="work" smooth={true} duration={1500}>
+              Work
+            </Link>
           </div>
           {/* contact me */}
-          <div className="flex h-24 items-center">
+          <div className="flex flex-col lg:flex-row lg:h-24 items-center">
             <a
               className="icon-footer shadow-2xl bg-zinc-800 w-fit p-4 rounded-full"
               href="https://linkedin.com/in/ali-ashrafi-b24943299"
@@ -100,13 +109,19 @@ export default function Footer() {
               </a>
             </div>
           </div>
+         </div>
 
-          <h1 className="text-7xl">Ali <span className="text-5xl">Ashrafi</span></h1>
+          <h1 className="text-2xl lg:text-7xl">
+            Ali <span className=" text-xl lg:text-5xl">Ashrafi</span>
+          </h1>
         </div>
-        <p className="text-white text-center mt-44 pb-2">
-          The entire structure of the site belongs to Ali, and any copying is
-          prohibited by mentioning the source
-        </p>
+        <div className="flex text-sm justify-center items-center mt-44 text-center">
+          <p className="text-white text-center mx-2 ">Received by Ali</p>
+          <div className="flex items-center ml-3">
+          <img src="/img/copyright.png" height={15} width={15}/>ّ
+          <p className="text-white text-center">2024</p>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -28,7 +28,7 @@ export default function MeThree() {
     <div ref={containerRef} className="container mx-auto px-24 text-center">
       <p
         ref={infoRef}
-        className="w-3/4 text-white text-4xl leading-relaxed mx-auto text-pretty mx-24 -z-20 opacity-0"
+        className="w-3/4 text-white text-xl lg:text-4xl leading-relaxed mx-auto text-pretty mx-24 -z-20 opacity-0"
       >
         I acquired a set of versatile technologies based on my passion for my
         career in 2022. I gained many of my skills from the various projects I

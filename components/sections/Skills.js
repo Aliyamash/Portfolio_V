@@ -49,8 +49,8 @@ export default function Skills() {
           <Image className="airplane" src={airplanes} alt="airplan"/>
         </div>
       </div>
-      <div className="h-96 mx-auto" >
-        <h1 className="text-center text-5xl text-black drop-shadow-lg capitalize">Things that make me more special than others :)</h1>
+      <div className="lg:h-96 mx-auto" >
+        <h1 className="text-center text-2xl lg:text-5xl text-black drop-shadow-lg capitalize">Things that make me more special than others :)</h1>
       </div>
     </>
   );

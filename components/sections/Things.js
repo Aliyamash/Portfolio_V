@@ -58,7 +58,7 @@ export default function Things() {
         </div>
       </div>
       <div className="-mt-60">
-          <h1 className="text-center capitalize text-4xl drop-shadow-lg ">and developing up-to-date and beautiful websites for example (this site)</h1>
+          <h1 className="text-center capitalize text-xl lg:text-4xl drop-shadow-lg ">and developing up-to-date and beautiful websites for example (this site)</h1>
         </div>
     
      

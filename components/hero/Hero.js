@@ -1,36 +1,13 @@
-"use client";
 
-import Down from "@/public/img/down.png";
-import Image from "next/image";
-import Link from "next/link";
+
 
 export default function Hero() {
   return (
     <>
-      <div className="container mx-auto lg:my-80" id="hero-section">
-        <div className="flex items-center justify-center">
-          <h1
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0"
-            data-aos-duration="500"
-            className="text-white  text-center border py-8 px-36 rounded-3xl relative z-0 "
-          >
-            Let's go down{" "}
-            <span>
-              <Link href="#moon">
-                <Image
-                  className="inline icon-hero"
-                  alt="hero-img"
-                  height={15}
-                  src={Down}
-                />
-              </Link>
-            </span>{" "}
-            together{" "}
-            <span className="px-16 py-2  absolute -bottom-2 right-1/3 mr-14 z-10 bg-black"></span>
-          </h1>
+      <div className="container mx-auto lg:my-80">
+        <div className="pt-24 lg:pt-0">
+         <h1 className="text-white w-full text-center text-xl lg:text-4xl focus-in-contract-bckOne mb-8">Landing Creativity</h1>
+         <h1 className="text-white w-full text-center text-4xl lg:text-8xl focus-in-contract-bckTwo">On Earth</h1>
         </div>
       </div>
     </>

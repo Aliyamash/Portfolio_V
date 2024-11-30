@@ -39,22 +39,23 @@ gsap.registerPlugin(ScrollTrigger)
     <>
       <div className="my-80" id="moon">
         <div className="relative pt-40 ">
-          <ParticlesComponent id="tsparticles" />
+         
           <div className="img-moon Moon">
            <div ref={imgRef}>
            <Image
-              width={850}
-              height={850}
+              width={185}
+              height={185}
               id="Moon"
               className="mx-auto object-cover brightness-75 contrast-125"
               src={MoonPic}
               alt="moon"
+              layout="intrinsic"
               priority 
             />
            </div>
 
             <div ref={textRef} id="textMoon">
-              <h1 className="text-white text-8xl drop-shadow-2xl text-center">
+              <h1 className="text-white text-2xl lg:text-8xl drop-shadow-2xl text-center">
                 Two Hands , One MasterPiece
               </h1>
           </div>

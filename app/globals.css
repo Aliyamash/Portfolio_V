@@ -22,7 +22,7 @@
     url(../public/fonts/Merriweather/Merriweather-Light.ttf) format("truetype");
 }
 body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   font-family: "Merrweather";
   background-color: #000;
   transition: 0.5s ease-out;
@@ -38,6 +38,87 @@ body {
   animation: scroll-watcher linear;
   animation-timeline: scroll();
 }
+.focus-in-contract-bckOne {
+	-webkit-animation: focus-in-contract-bck 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 2s;
+}
+.focus-in-contract-bckTwo {
+	-webkit-animation: focus-in-contract-bck 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 3s;
+}
+
+ @-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
 
 @keyframes scroll-watcher {
   to {
@@ -85,7 +166,7 @@ body {
     transform: translateY(-10px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(40px);
   }
   100% {
     transform: translateY(-10px);
@@ -115,7 +196,7 @@ body {
   color: #ecf39e;
 }
 #textMoon {
-  width: 100rem !important;
+  width: 100rem ;
 }
 .container-airplanes {
   padding-top: 24rem;
@@ -225,7 +306,7 @@ body {
 }
 
 .ptext {
-  font-family: "GeoSans";
+  font-family: cursive;
 }
 
 @keyframes animateFamous {
@@ -503,6 +584,7 @@ rgba(250, 246, 0, 0.425) 0px -12px 200px, rgba(221, 217, 1, 0.12) 0px 4px 160px,
 rgba(236, 221, 1, 0.637) 0px 12px 150px, rgba(236, 240, 1, 0.09) 0px -3px 200px;
 }
 .icon-footer {
+  padding: 10px;
   transition: 0.5s;
   margin-inline: 0.75rem;
 }

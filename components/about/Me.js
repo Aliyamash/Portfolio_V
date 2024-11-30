@@ -9,12 +9,11 @@ export default function Me() {
   const smoother = useRef();
 
   return (
-    <div className="container text-white mx-auto px-24 text-center -mt-28">
-      <div className="flex text-5xl gap-5 justify-center leading-relaxed">
-        <p>Hello World, I am </p>
-        <p>Ali</p>
+    <div className="container text-white mx-auto px-8 lg:px-24 text-center -mt-28">
+      <div className="flex text-xl lg:text-5xl gap-5 justify-center leading-relaxed mb-4">
+        <p>Hello World , I am Ali</p>
       </div>
-      <p className="box-c text-4xl leading-relaxed mx-auto text-pretty capitalize">
+      <p className="box-c text-lg lg:text-4xl leading-relaxed mx-auto text-pretty capitalize">
         I have been working in the front-end field for more than 3 years, and I
         am also very interested in designing attractive and special designs. I
         have a good team consisting of front-end, back-end and UI designer, each of

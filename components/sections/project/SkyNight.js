@@ -3,6 +3,7 @@ import Image from "next/image";
 import rightIcon from "@/public/img/right.png";
 
 import { useRef } from "react";
+import { Element } from "react-scroll";
 
 export default function SkyNight() {
   const clip1 = useRef(null);
@@ -113,9 +114,10 @@ export default function SkyNight() {
   return (
     <>
       <div className="skyPic w-fit">
-   <div className="flex justify-between px-8 mb-64">
+        <Element name="works"></Element>
+   <div className="flex flex-col gap-8 p-4 lg:flex-row justify-between px-8 lg:mb-64">
 
-          <div className="card-container" id="works">
+          <div className="card-container mb-8 lg:mb-0">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler1}
@@ -140,7 +142,7 @@ export default function SkyNight() {
             </article>
           </div>
 
-          <div className="card-container" id="work">
+          <div className="card-container mb-8 lg:mb-0" id="work">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler2}
@@ -166,8 +168,8 @@ export default function SkyNight() {
           </div>
         </div>
 
-  <div className="flex justify-between px-8 mb-64">
-          <div className="card-container">
+  <div className="flex flex-col gap-8 p-4 lg:flex-row justify-between px-8 lg:mb-64">
+          <div className="card-container  mb-8 lg:mb-0">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler3}
@@ -192,7 +194,7 @@ export default function SkyNight() {
               </div>
             </article>
           </div>
-          <div className="card-container">
+          <div className="card-container mb-8 lg:mb-0">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler4}
@@ -218,8 +220,8 @@ export default function SkyNight() {
           </div>
         </div>
 
-   <div className="flex justify-between px-8 mb-64">
-          <div className="card-container">
+   <div className="flex flex-col gap-8 p-4 lg:flex-row justify-between px-8 lg:mb-64">
+          <div className="card-container mb-8 lg:mb-0">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler5}
@@ -244,7 +246,7 @@ export default function SkyNight() {
             </article>
           </div>
 
-          <div className="card-container">
+          <div className="card-container mb-8 lg:mb-0">
             <article className="card-article">
               <video
                 onMouseEnter={enterMouseHandler6}
@@ -271,9 +273,9 @@ export default function SkyNight() {
           </div>
         </div>
 
-   <div className="flex justify-between px-8 mb-64">
+   <div className="flex flex-col gap-8 p-4 lg:flex-row justify-between px-8 lg:mb-64">
           
-        <div className="card-container">
+        <div className="card-container mb-8 lg:mb-0">
               <article className="card-article">
                 <video
                   onMouseEnter={enterMouseHandler8}
@@ -298,7 +300,7 @@ export default function SkyNight() {
               </article>
             </div>
 
-            <div className="card-container">
+            <div className="card-container mb-8 lg:mb-0">
               <article className="card-article">
                 <video
                 onMouseEnter={enterMouseHandler7}

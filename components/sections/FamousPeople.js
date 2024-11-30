@@ -8,7 +8,7 @@ export default function FamousPeople() {
       <div className="mb-24 mt-36 text-center text-2xl capitalize">
         <h2>And I am eager to hear the opinion of these loved ones</h2>
       </div>
-      <div className="flex gap-8 my-24 justify-center">
+      <div className="flex flex-col mx-4 lg:flex-row gap-8 my-24 justify-center">
         <div>
           <Image
             src={BrendanEich}

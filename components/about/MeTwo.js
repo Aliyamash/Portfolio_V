@@ -27,11 +27,11 @@ export default function MeTwo() {
   return (
     <div
       ref={containerRef}
-      className="container mx-auto px-24 text-center -mt-28 "
+      className="container mx-auto lg:px-24 text-center -mt-28 "
     >
       <p
         ref={infoRef}
-        className="box-c text-two text-4xl leading-relaxed mx-auto text-pretty mx-24 -z-20"
+        className="box-c text-two text-lg lg:text-4xl leading-relaxed mx-auto text-pretty mx-2 lg:mx-24 -z-20"
       >
         we work in one of the most ancient countries in the world and one of the
         most historical provinces in the world, namely Isfahan, with different
