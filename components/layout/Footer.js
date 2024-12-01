@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center mt-32 p-8 lg:px-24 pt-36 text-white ">
 
-         <div className="flex  items-center justify-between ">
+         <div className="lg:flex items-center justify-between w-2/3">
            {/* link */}
            <div className="flex flex-col text-sm lg:text-lg  gap-4  lg:gap-8">
             <Link to="header-section" smooth={true} duration={2500}>

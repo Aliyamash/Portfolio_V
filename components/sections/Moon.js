@@ -37,7 +37,7 @@ gsap.registerPlugin(ScrollTrigger)
   }, []);
   return (
     <>
-      <div className="my-80" id="moon">
+      <div className="my-80 w-full" id="moon">
         <div className="relative pt-40 ">
          <ParticlesComponent/>
           <div className="img-moon Moon">
