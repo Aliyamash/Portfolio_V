@@ -12,17 +12,30 @@ export default function Moon() {
 
 gsap.registerPlugin(ScrollTrigger)
   useLayoutEffect(() => {
+    const ResponsiveGsap = gsap.matchMedia()
+      ResponsiveGsap.add("(max-width:768px)" , () => {
+        gsap.to(textRef.current, {
+          yPercent: -400,
+          duration:3,
+          scrollTrigger: {
+            trigger:".Moon",
+            start:"-30% center",
+            end:"top top",
+            scrub: 2
+          },
+        });
+      })
+  ResponsiveGsap.add("(min-width:1024px)" , () => {
     gsap.to(textRef.current, {
       yPercent: -400,
       duration:3,
       scrollTrigger: {
         trigger:".Moon",
-        pinSpacing:true,
         start:"top 30%",
-        invalidateOnRefresh:true,
         scrub: 2
       },
     });
+  })
 
     gsap.to(imgRef.current, {
       yPercent: 20,
@@ -37,19 +50,18 @@ gsap.registerPlugin(ScrollTrigger)
   }, []);
   return (
     <>
-      <div className="my-80 w-full" id="moon">
+      <div className="my-80" id="moon">
         <div className="relative pt-40 ">
          <ParticlesComponent/>
           <div className="img-moon Moon">
            <div ref={imgRef}>
            <Image
-              width={185}
-              height={185}
+              width={900}
+              height={900}
               id="Moon"
-              className="mx-auto object-cover brightness-75 contrast-125"
+              className="moonPic mx-auto object-cover brightness-75 contrast-125"
               src={MoonPic}
               alt="moon"
-              layout="intrinsic"
               priority 
             />
            </div>

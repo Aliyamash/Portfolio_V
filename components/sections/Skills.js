@@ -12,6 +12,7 @@ export default function Skills() {
   const picRef = useRef();
 
   useGSAP(() => {
+ 
    gsap.to(
       picRef.current,
       {

@@ -1,13 +1,14 @@
 "use client";
 import { Link } from "react-scroll";
 import email from "@/public/img/email.png";
+import logo from "@/public/img/alilogo.png";
 import linkedin from "@/public/img/linkedin.png";
 import Image from "next/image";
 
 export default function Footer() {
   return (
     <>
-      <div className="footer bg-black pt-96 mx-auto">
+      <div className="footer bg-black pt-96 px-8 lg:px-2">
         <div className="container-footer">
           <div className="footer-clip mx-auto ">
             <video
@@ -27,30 +28,32 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between items-center mt-32 p-8 lg:px-24 pt-36 text-white ">
-
-         <div className="lg:flex items-center justify-between w-2/3">
+        
+    <hr className="border border-zinc-800 w-10/12 mx-auto mt-32"/>
+        <div className="flex flex-col lg:flex-row justify-between items-center p-8 lg:px-24 pt-28 text-white ">
+         <div className="w-full flex items-center justify-between lg:mr-72">
            {/* link */}
-           <div className="flex flex-col text-sm lg:text-lg  gap-4  lg:gap-8">
-            <Link to="header-section" smooth={true} duration={2500}>
+           <div className="flex flex-col text-sm lg:text-lg gap-6">
+            <Link className=" cursor-pointer" to="header-section" smooth={true} duration={2500}>
               back to up
             </Link>
-            <Link to="comments" smooth={true} duration={1500}>
+            <Link className=" cursor-pointer" to="comments" smooth={true} duration={1500}>
               Comments
             </Link>
-            <Link to="work" smooth={true} duration={1500}>
+            <Link className=" cursor-pointer" to="work" smooth={true} duration={1500}>
               Work
             </Link>
           </div>
           {/* contact me */}
-          <div className="flex flex-col lg:flex-row lg:h-24 items-center">
+          <div className="flex flex-col lg:flex-row lg:h-24 items-center gap-4 lg:pr-40">
             <a
               className="icon-footer shadow-2xl bg-zinc-800 w-fit p-4 rounded-full"
               href="https://linkedin.com/in/ali-ashrafi-b24943299"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <Image 
+              className="contact-icon1"
                 src={linkedin}
                 height={40}
                 width={40}
@@ -65,6 +68,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
+              className="contact-icon1"
                 src={email}
                 height={40}
                 width={40}
@@ -81,6 +85,7 @@ export default function Footer() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0,0,256,256"
+                  className="contact-icon1"
                   width="40px"
                   height="40px"
                   fillRule="nonzero"
@@ -111,14 +116,14 @@ export default function Footer() {
           </div>
          </div>
 
-          <h1 className="text-2xl lg:text-7xl">
-            Ali <span className=" text-xl lg:text-5xl">Ashrafi</span>
-          </h1>
+          {/* logo */}
+          <Image src={logo} alt="logo" width={300} height={300}/>
         </div>
-        <div className="flex text-sm justify-center items-center mt-44 text-center">
+
+        <div className="flex pb-4 lg:pb-0 text-sm justify-center items-center mt-44 text-center">
           <p className="text-white text-center mx-2 ">Received by Ali</p>
           <div className="flex items-center ml-3">
-          <img src="/img/copyright.png" height={15} width={15}/>ّ
+          <img src="/img/copyright.png" alt="logo-copyright" height={15} width={15}/>ّ
           <p className="text-white text-center">2024</p>
           </div>
         </div>

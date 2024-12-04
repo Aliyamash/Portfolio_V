@@ -22,12 +22,12 @@ export default function Travel() {
   return (
     <>
       <div className="gol">
-        <div className="mx-20">
+        <div className="mx-4 lg:mx-20">
           <div className="works-title mb-36 text-center">
             <h1 className="pt-36 py-auto font-bold text-6xl">Travel</h1>
             <p className="mt-8 tracking-widest text-2xl">Travel and enjoy</p>
           </div>
-          <div className="bg-game p-16">
+          <div className="bg-game p-2 lg:p-16">
             {/* project video */}
             <div className="mt-16 shadow rounded-2xl  shadow-2xl">
               <video
@@ -42,9 +42,9 @@ export default function Travel() {
             </div>
 
             {/* btn link */}
-            <div className="clip-btn shadow shadow-2xl flex items-center gap-2 justify-center text-center my-12 bg-zinc-800 w-3/4 p-4 mx-auto rounded-2xl">
+            <div className="clip-btn shadow shadow-2xl flex items-center gap-2 justify-center text-center my-12 bg-zinc-800 w-4/5 lg:w-3/4 p-4 mx-auto rounded-2xl">
               <a
-                className="text-white text-2xl"
+                className="text-white lg:text-2xl"
                 href="https://travel-nu-pearl.vercel.app/https://travel-nu-pearl.vercel.app/"
                 target="_blank"
               >
@@ -60,7 +60,7 @@ export default function Travel() {
 
             <hr className=" border-gray-500" />
             {/* project Desciption */}
-            <div className="my-20 pl-12  w-3/4">
+            <div className="my-20 px-6 lg:pl-12">
               <h1 className="text-gray-600 my-4">Desciption</h1>
               <p className="text-xl tracking-normal leading-relaxed">
                 This site is made for the purpose of familiarizing people with
@@ -74,13 +74,13 @@ export default function Travel() {
             </div>
             <hr className=" border-gray-500" />
             {/* project Tools */}
-            <div className="my-20 pl-12">
+            <div className="my-20 px-6 lg:pl-12">
               <h1 className="text-gray-600 my-4 ">Tools</h1>
               <p className="text-xl">Html / Css / Grid /javaScript</p>
             </div>
             <hr className=" border-gray-500" />
             {/* Links */}
-            <div className="my-20 pl-12">
+            <div className="my-20 px-6 lg:pl-12">
               <h1 className="text-gray-600 mt-4">Links</h1>
               <p className="text-xl tracking-normal leading-relaxed">
                 You can access the site and the source codes of the site in the

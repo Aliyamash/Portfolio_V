@@ -41,12 +41,12 @@ export default function InfoTwo() {
 
   return (
     <>
-      <div ref={containerRef} className="py-80 mx-32 -mt-60 relative">
+      <div ref={containerRef} className="container mx-auto py-80  lg:-mt-60 relative">
         <div>
           <Image
             ref={refCompany1}
             data-speed="1.3"
-            className="company object-cover grayscale absolute bottom-10 left-28 z-50"
+            className="company comp1 object-cover grayscale absolute bottom-10 left-28 z-50"
             height={70}
             src={shahriarH}
             alt="shahriarh-logo"
@@ -54,8 +54,8 @@ export default function InfoTwo() {
           <Image
             ref={refCompany2}
             data-speed="3"
-            className="company object-cover absolute bottom-20 right-0 z-50"
-            height={50}
+            className="company ifund lg:h-50 object-cover absolute bottom-20 z-50"
+            height={30}
             src={ifund}
             alt="ifund-logo"
           />
@@ -66,7 +66,7 @@ export default function InfoTwo() {
             width="200"
             height="72.449"
             viewBox="0 0 300 72.449"
-            className="company absolute left-1/3 bottom-36 z-50"
+            className="company comp2 absolute left-1/3 bottom-36 z-50"
             alt="freelancer-logo"
           >
             <title>Freelancer Logo</title>
@@ -82,15 +82,16 @@ export default function InfoTwo() {
           <p
             ref={refCompany4}
             data-speed="2.4"
-            className="company text-white heyvanyer absolute right-32 bottom-36 z-50"
+            className="company text-white heyvanyer absolute right-5 lg:right-32 bottom-36 z-50"
             alt="heyvanyar-logo"
           >
             HeyvanYar
           </p>
+
           <Image
             ref={refCompany5}
             data-speed="1.9"
-            className="company object-cover absolute left-56 bottom-40 z-50"
+            className="company comp3 object-cover absolute left-56 bottom-40 z-50"
             height={200}
             src={upwork}
             alt="upwork-logo"

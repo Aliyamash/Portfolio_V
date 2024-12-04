@@ -14,7 +14,7 @@ export default function FamousPeople() {
             src={BrendanEich}
             className="famousPic1 rounded-2xl shadow-2xl shadow-gray-700"
             height={120}
-            alt="berdan"
+            alt="berdan Commment"
           />
         </div>
         <div >
@@ -22,7 +22,7 @@ export default function FamousPeople() {
             src={jadi}
             className="famousPic2 rounded-2xl shadow-2xl shadow-gray-700 "
             height={120}
-            alt="jadi"
+            alt="jadi Comment"
           />
         </div>
       </div>

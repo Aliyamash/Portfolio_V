@@ -15,7 +15,7 @@ export default function Comment() {
     <>
       <div className="mt-96">
         {/* title of Comments */}
-        <div className="my-auto py-20 ">
+        <div className="my-auto pt-20 pb-4 ">
           <h1
             data-aos="fade-up"
             data-aos-duration="1000"

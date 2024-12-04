@@ -27,14 +27,12 @@ export default function Info() {
 
   return (
     <>
-      <div>
+      <div className="my-20">
         <Me />
-        <div ref={cloudRef} className="-my-24 relative"> 
+        <div ref={cloudRef} className="my-20 lg:-my-24 relative"> 
           <Image
             src={cloud7}
             alt="cloud-7"
-            
-            className="opacity-100"
           />
         </div>
       </div>

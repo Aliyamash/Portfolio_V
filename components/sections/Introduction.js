@@ -90,6 +90,10 @@ export default function IntroductionPage() {
               className="meteorite absolute right-8 -top-2"
               height={400}
               width={400}
+              style={{
+                width: "400px",
+                height: "auto",
+              }}
               src={meteorite}
               alt="meteorite"
             />
@@ -97,8 +101,10 @@ export default function IntroductionPage() {
           <div ref={meteoriteRefTwo}>
             <Image
               className="meteorite absolute right-12 "
-              height={200}
-              width={200}
+              style={{
+                width: "200px",
+                height: "auto", // یا برعکس
+              }}
               src={meteorite}
               alt="meteorite"
             />
@@ -106,13 +112,23 @@ export default function IntroductionPage() {
           <div ref={meteoriteRefThree}>
             <Image
               className="meteorite absolute right-16 -top-12"
-              height={300}
-              width={250}
+              style={{
+                width: "auto",
+                height: "300px"
+              }}
               src={meteorite}
               alt="meteorite"
             />
           </div>
-          <Image className="starone mx-auto" height={300} width={350} src={star1} alt="meteorite"/>
+          <Image
+            className="starone mx-auto"
+            style={{
+              width: "300px",
+              height: "auto", 
+            }}
+            src={star1}
+            alt="meteorite"
+          />
         </div>
         <div>
           <MeThree />

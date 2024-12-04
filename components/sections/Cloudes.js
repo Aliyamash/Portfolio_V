@@ -34,12 +34,14 @@ export default function CloudePage() {
     },[])
     return(
         <>
-        <div ref={cloud1Ref} className="pt-24 w-full h-screen relative">
+       <div className="container mx-auto">
+       <div ref={cloud1Ref} className="pt-24 w-full h-90 lg:h-screen relative">
             <Image className="absolute top-0 right-0" alt="cloud-8" id="cloud8" height={950} width="auto" src={cloud5} /> 
         </div>
-        <div ref={cloud2Ref} className="w-full h-screen relative">
-        <Image className="absolute -top-80 -left-16 drop-shadow-lg shadow-white" alt="cloud-2" height={900} width={1400} src={cloud2} />
+        <div ref={cloud2Ref} className="w-full h-60 lg:h-screen relative">
+        <Image className="absolute -top-80 -left-16 drop-shadow-lg shadow-white" alt="cloud-2"  height={900} width={1400} src={cloud2} />
         </div>
+       </div>
         </>
     )
 }

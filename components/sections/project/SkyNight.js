@@ -136,7 +136,7 @@ export default function SkyNight() {
                   <a href="/gameOne" className="card-button">
                     Read more
                   </a>
-                  <Image className="icon-btn" src={rightIcon} width={20} />
+                  <Image className="icon-btn" alt="icon-btn"  src={rightIcon} width={20} />
                 </div>
               </div>
             </article>
@@ -161,7 +161,7 @@ export default function SkyNight() {
                   <a href="/apiList" className="card-button">
                     Read more
                   </a>
-                  <Image className="icon-btn" src={rightIcon} width={20} />
+                  <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                 </div>
               </div>
             </article>
@@ -189,7 +189,7 @@ export default function SkyNight() {
                   <a href="/gameTwo" className="card-button">
                     Read more
                   </a>
-                  <Image className="icon-btn" src={rightIcon} width={20} />
+                  <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                 </div>
               </div>
             </article>
@@ -213,7 +213,7 @@ export default function SkyNight() {
                   <a href="/keyhanWeb" className="card-button">
                     Read more
                   </a>
-                  <Image className="icon-btn" src={rightIcon} width={20} />
+                  <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                 </div>
               </div>
             </article>
@@ -240,7 +240,7 @@ export default function SkyNight() {
                   <a href="/shahriarH" className="card-button">
                     Read more
                   </a>
-                  <Image className="icon-btn" src={rightIcon} width={20} />
+                  <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                 </div>
               </div>
             </article>
@@ -266,7 +266,7 @@ export default function SkyNight() {
                   <a href="/fastFood" className="card-button">
                     Read more
                   </a>
-                  <Image className="icon-btn" src={rightIcon} width={20} />
+                  <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                 </div>
               </div>
             </article>
@@ -294,7 +294,7 @@ export default function SkyNight() {
                     <a href="/basketShop" className="card-button">
                       Read more
                     </a>
-                    <Image className="icon-btn" src={rightIcon} width={20} />
+                    <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                   </div>
                 </div>
               </article>
@@ -319,7 +319,7 @@ export default function SkyNight() {
                     <a href="/travel" className="card-button">
                       Read more
                     </a>
-                    <Image className="icon-btn" src={rightIcon} width={20} />
+                    <Image className="icon-btn" alt="icon-btn" src={rightIcon} width={20} />
                   </div>
                 </div>
               </article>
