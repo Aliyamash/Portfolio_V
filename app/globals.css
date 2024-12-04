@@ -739,6 +739,9 @@ body {
       rgba(236, 221, 1, 0.637) 0px 12px 70px,
       rgba(236, 240, 1, 0.09) 0px -3px 200px;
   }
+  .card-data {
+    width: 325px;
+  }
 
   .contact-icon1 {
     height: 25px;
