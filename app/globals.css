@@ -539,7 +539,7 @@ body {
 }
 
 .footer {
-  height: 100%;
+ display: block;
 }
 .footer-title {
   top: 0;
@@ -742,7 +742,6 @@ body {
   .card-data {
     width: 325px;
   }
-
   .contact-icon1 {
     height: 25px;
     width: 25px;
