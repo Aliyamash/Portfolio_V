@@ -19,8 +19,8 @@ export default function Home() {
 
   return (
   <>
+  <ScrollHandler/>
   <Header/>
-
    <Hero/>
    <Moon/>
    <CloudePage/>
