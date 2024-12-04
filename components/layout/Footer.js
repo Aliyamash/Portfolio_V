@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="footer bg-black pt-96 px-8 lg:px-2">
+      <div className="footer bg-black px-8 lg:px-2">
         <div className="container-footer">
           <div className="footer-clip mx-auto ">
             <video

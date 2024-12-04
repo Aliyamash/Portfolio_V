@@ -8,7 +8,7 @@ export default function Projects () {
         <div>
           <ProjectSection/>
         </div>
-      <div>
+      <div className="bg-black pb-96">
         <SkyNight/>
       </div>
         </>
