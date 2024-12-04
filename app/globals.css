@@ -546,6 +546,7 @@ body {
   position: absolute;
 }
 .container-footer {
+  display: block;
   position: relative;
   mask-image: linear-gradient(
     to top,
